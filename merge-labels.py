@@ -29,7 +29,7 @@ def get_extra_labels(base_labels, current_labels):
             extra_labels.pop(label)
     return [label for label in extra_labels.values()]
 
-def dump_labels(repo_name, extra_labels):
+def dump_labels(fn, repo_name, extra_labels):
     with open('base-labels.yaml') as in_file:
         content = yaml.safe_load(in_file)
     content['repo'] = repo_name
@@ -38,11 +38,11 @@ def dump_labels(repo_name, extra_labels):
             label.pop('equiv')
     for label in extra_labels:
         content['labels'].append(label)
-    with open('labels-{}.yaml'.format(repo_name), 'w') as out_file:
+    with open(fn, 'w') as out_file:
        yaml.dump(content, out_file)
 
 base_labels = load_base_labels()
 for fn in glob('labels-*.yaml'):
     repo_name, current_labels = load_repo(fn)
     extra_labels = get_extra_labels(base_labels, current_labels)
-    dump_labels(repo_name, extra_labels)
+    dump_labels(fn, repo_name, extra_labels)
