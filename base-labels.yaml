@@ -15,7 +15,6 @@ labels:
   color: 20c997
 - name: ux
   color: 22b8cf
-
 - name: duplicate
   color: 22b8cf
 - name: good first issue
@@ -24,31 +23,26 @@ labels:
   color: a11ec6
 - name: wontfix
   color: 22b8cf
-
 - name: epic
   color: 3b5bdb
 - name: story
   color: 7950f2
-
-- name: priority: high
+- name: "priority: high"
   color: c92a2a
-- name: priority: medium
+  equiv: ['p0']
+- name: "priority: medium"
   color: fd7e14
-- name: priority: low
+  equiv: ['p1']
+- name: "priority: low"
   color: fff3bf
-
-- name: effort: XL
+  equiv: ['p2', 'p3']
+- name: "effort: XL"
   color: 5db8fe
-
-- name: effort: L
+- name: "effort: L"
   color: 5db8fe
-
-- name: effort: M
+- name: "effort: M"
   color: 5db8fe
-
-- name: effort: S
+- name: "effort: S"
   color: 5db8fe
-
-- name: effort: XS
+- name: "effort: XS"
   color: 5db8fe
-
