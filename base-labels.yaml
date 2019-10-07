@@ -1,0 +1,54 @@
+labels:
+- name: bug
+  color: e03131
+- name: documentation
+  color: 5c940d
+- name: enhancement
+  color: 84b6eb
+- name: question
+  color: cc317c
+- name: invalid
+  color: d9480f
+- name: security
+  color: fcc419
+- name: wishlist
+  color: 20c997
+- name: ux
+  color: 22b8cf
+
+- name: duplicate
+  color: 22b8cf
+- name: good first issue
+  color: 37b24d
+- name: hacktoberfest
+  color: a11ec6
+- name: wontfix
+  color: 22b8cf
+
+- name: epic
+  color: 3b5bdb
+- name: story
+  color: 7950f2
+
+- name: priority: high
+  color: c92a2a
+- name: priority: medium
+  color: fd7e14
+- name: priority: low
+  color: fff3bf
+
+- name: effort: XL
+  color: 5db8fe
+
+- name: effort: L
+  color: 5db8fe
+
+- name: effort: M
+  color: 5db8fe
+
+- name: effort: S
+  color: 5db8fe
+
+- name: effort: XS
+  color: 5db8fe
+
