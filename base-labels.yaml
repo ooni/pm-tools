@@ -8,7 +8,7 @@ labels:
 - name: question
   color: cc317c
 - name: invalid
-  color: d9480f
+  color: ffffff
 - name: security
   color: fcc419
 - name: wishlist
@@ -16,33 +16,38 @@ labels:
 - name: ux
   color: 22b8cf
 - name: duplicate
-  color: 22b8cf
+  color: ffffff
 - name: good first issue
   color: 37b24d
 - name: hacktoberfest
   color: a11ec6
 - name: wontfix
-  color: 22b8cf
+  color: ffffff
 - name: epic
   color: 3b5bdb
 - name: story
   color: 7950f2
-- name: "priority: high"
+- name: "priority/high"
   color: c92a2a
-  equiv: ['p0']
-- name: "priority: medium"
+  equiv: ['p0', 'priority: high']
+- name: "priority/medium"
   color: fd7e14
-  equiv: ['p1']
-- name: "priority: low"
+  equiv: ['p1', 'priority: medium']
+- name: "priority/low"
   color: fff3bf
-  equiv: ['p2', 'p3']
-- name: "effort: XL"
+  equiv: ['p2', 'p3', 'priority: low']
+- name: "effort/XL"
   color: 5db8fe
-- name: "effort: L"
+  equiv: ["effort: XL"]
+- name: "effort/L"
   color: 5db8fe
-- name: "effort: M"
+  equiv: ["effort: L"]
+- name: "effort/M"
   color: 5db8fe
-- name: "effort: S"
+  equiv: ["effort: M"]
+- name: "effort/S"
   color: 5db8fe
-- name: "effort: XS"
+  equiv: ["effort: S"]
+- name: "effort/XS"
   color: 5db8fe
+  equiv: ["effort: XS"]

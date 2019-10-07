@@ -7,7 +7,7 @@ labels:
   name: enhancement
 - color: cc317c
   name: question
-- color: d9480f
+- color: ffffff
   name: invalid
 - color: fcc419
   name: security
@@ -15,32 +15,32 @@ labels:
   name: wishlist
 - color: 22b8cf
   name: ux
-- color: 22b8cf
+- color: ffffff
   name: duplicate
 - color: 37b24d
   name: good first issue
 - color: a11ec6
   name: hacktoberfest
-- color: 22b8cf
+- color: ffffff
   name: wontfix
 - color: 3b5bdb
   name: epic
 - color: 7950f2
   name: story
 - color: c92a2a
-  name: 'priority: high'
+  name: priority/high
 - color: fd7e14
-  name: 'priority: medium'
+  name: priority/medium
 - color: fff3bf
-  name: 'priority: low'
+  name: priority/low
 - color: 5db8fe
-  name: 'effort: XL'
+  name: effort/XL
 - color: 5db8fe
-  name: 'effort: L'
+  name: effort/L
 - color: 5db8fe
-  name: 'effort: M'
+  name: effort/M
 - color: 5db8fe
-  name: 'effort: S'
+  name: effort/S
 - color: 5db8fe
-  name: 'effort: XS'
+  name: effort/XS
 repo: ooni/design.ooni.io
