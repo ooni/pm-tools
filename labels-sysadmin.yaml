@@ -45,16 +45,6 @@ labels:
   name: 'effort: XS'
 - color: ffe3cc
   name: OTFy2
-- color: 5db8fe
-  name: effort/L
-- color: 5db8fe
-  name: effort/M
-- color: 5db8fe
-  name: effort/S
-- color: 5db8fe
-  name: effort/XL
-- color: 5db8fe
-  name: effort/XS
 - color: '159818'
   name: help wanted
 - color: b60205
@@ -63,12 +53,6 @@ labels:
   name: incident
 - color: 1d76db
   name: low-priority
-- color: c92a2a
-  name: priority/high
-- color: fff3bf
-  name: priority/low
-- color: fd7e14
-  name: priority/medium
 - color: 1d76db
   name: ready for review
 - color: 5319e7

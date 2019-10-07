@@ -43,22 +43,4 @@ labels:
   name: 'effort: S'
 - color: 5db8fe
   name: 'effort: XS'
-- color: 5db8fe
-  name: effort/L
-- color: 5db8fe
-  name: effort/M
-- color: 5db8fe
-  name: effort/S
-- color: 5db8fe
-  name: effort/XL
-- color: 5db8fe
-  name: effort/XS
-- color: 008672
-  name: help wanted
-- color: c92a2a
-  name: priority/high
-- color: fff3bf
-  name: priority/low
-- color: fd7e14
-  name: priority/medium
 repo: ooni/collector
