@@ -43,8 +43,6 @@ labels:
   name: 'effort: S'
 - color: 5db8fe
   name: 'effort: XS'
-- color: 3533b7
-  name: OTFy2
 - color: fbca04
   name: faulty-report
 - color: bfd4f2
