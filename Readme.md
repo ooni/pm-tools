@@ -9,3 +9,6 @@ To sync the labels with the ones in this repo run: `python sync-labels.py`.
 
 Other useful scripts in here include `add-to-teams.py`, which adds issues to
 the relevant github project board in the icebox column.
+
+For github webhooks that run once actions are done on the ooni organisation
+see: https://github.com/ooni/github-webhooks
