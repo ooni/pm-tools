@@ -71,7 +71,7 @@ class IssueError(Exception):
 
 class MissingLabel(IssueError):
     def __init__(self, label_class, issue_title, issue_url):
-        super(IssueError)
+        super().__init__(issue_title, issue_url)
         self.label_class = label_class
 
     def print_error(self):
@@ -79,7 +79,7 @@ class MissingLabel(IssueError):
 
 class DuplicateLabel(IssueError):
     def __init__(self, label_class, issue_title, issue_url):
-        super(IssueError)
+        super().__init__(issue_title, issue_url)
         self.label_class = label_class
 
     def print_error(self):
