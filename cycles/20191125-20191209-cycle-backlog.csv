@@ -1,5 +1,7 @@
 priority,effort,effort_points,issue_url,assignees,repository,labels,project
 high,M,5,https://github.com/ooni/pipeline/issues/138,FedericoCeratto|hellais,pipeline,discuss|documentation|effort/M|priority/high|question,OONI Backends
+high,M,5,https://github.com/ooni/pipeline/pull/264,FedericoCeratto,pipeline,effort/M|in progress|priority/high,OONI Backends
+high,M,5,https://github.com/ooni/pipeline/issues/265,FedericoCeratto|hellais,pipeline,effort/M|priority/high,OONI Backends
 high,S,3,https://github.com/ooni/api/issues/135,FedericoCeratto|bassosimone|hellais|sarathms,api,discuss|effort/S|priority/high,OONI Backends
 high,L,8,https://github.com/ooni/pipeline/pull/228,bassosimone|hellais,pipeline,effort/L|priority/high,OONI Backends
 high,M,5,https://github.com/ooni/sysadmin/issues/394,FedericoCeratto|hellais,sysadmin,effort/M|enhancement|priority/high,OONI Backends
@@ -22,6 +24,7 @@ high,S,3,https://github.com/ooni/probe-engine/issues/111,bassosimone,probe-engin
 high,S,3,https://github.com/ooni/spec/issues/163,bassosimone,spec,bug|effort/S|priority/high,OONI Measurements
 high,M,5,https://github.com/ooni/netx/issues/126,bassosimone,netx,bug|effort/M|priority/high,OONI Measurements
 medium,M,5,https://github.com/ooni/probe-engine/issues/93,bassosimone,probe-engine,effort/M|enhancement|priority/medium,OONI Measurements
+medium,S,3,https://github.com/ooni/probe-android/issues/271,bassosimone,probe-android,bug|effort/S|priority/medium|probe-mobile,OONI Apps
 high,M,5,https://github.com/ooni/probe-cli/issues/77,bassosimone,probe-cli,effort/M|priority/high,OONI Apps
 high,M,5,https://github.com/ooni/probe-cli/issues/41,bassosimone,probe-cli,effort/M|enhancement|priority/high,OONI Apps
 high,XS,2,https://github.com/ooni/probe-desktop/issues/60,sarathms,probe-desktop,effort/XS|enhancement|priority/high,OONI Apps
