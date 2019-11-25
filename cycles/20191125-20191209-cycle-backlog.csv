@@ -1,0 +1,42 @@
+priority,effort,effort_points,issue_url,assignees,repository,labels,project
+high,M,5,https://github.com/ooni/pipeline/issues/138,FedericoCeratto|hellais,pipeline,discuss|documentation|effort/M|priority/high|question,OONI Backends
+high,S,3,https://github.com/ooni/api/issues/135,FedericoCeratto|bassosimone|hellais|sarathms,api,discuss|effort/S|priority/high,OONI Backends
+high,L,8,https://github.com/ooni/pipeline/pull/228,bassosimone|hellais,pipeline,effort/L|priority/high,OONI Backends
+high,M,5,https://github.com/ooni/sysadmin/issues/394,FedericoCeratto|hellais,sysadmin,effort/M|enhancement|priority/high,OONI Backends
+high,L,8,https://github.com/ooni/pipeline/issues/256,FedericoCeratto,pipeline,discuss|effort/L|priority/high,OONI Backends
+high,M,5,https://github.com/ooni/sysadmin/issues/397,FedericoCeratto,sysadmin,effort/M|priority/high,OONI Backends
+high,L,8,https://github.com/ooni/pipeline/issues/263,FedericoCeratto|agrabeli,pipeline,discuss|effort/L|priority/high,OONI Backends
+high,L,8,https://github.com/ooni/orchestra/issues/78,bassosimone|hellais,orchestra,effort/L|enhancement|priority/high,OONI Backends
+high,L,8,https://github.com/ooni/sysadmin/pull/380,bassosimone|hellais,sysadmin,effort/L|priority/high,OONI Backends
+medium,S,3,https://github.com/ooni/pipeline/pull/255,bassosimone|hellais,pipeline,effort/S|priority/medium,OONI Backends
+medium,M,5,https://github.com/ooni/pipeline/issues/234,FedericoCeratto,pipeline,effort/M|priority/medium,OONI Backends
+medium,M,5,https://github.com/ooni/sysadmin/issues/396,hellais,sysadmin,effort/M|priority/medium,OONI Backends
+high,M,5,https://github.com/ooni/probe-engine/issues/109,bassosimone,probe-engine,effort/M|enhancement|priority/high,OONI Measurements
+high,S,3,https://github.com/ooni/probe-engine/issues/113,bassosimone,probe-engine,bug|effort/S|priority/high,OONI Measurements
+high,S,3,https://github.com/ooni/spec/issues/164,bassosimone,spec,bug|effort/S|priority/high,OONI Measurements
+high,M,5,https://github.com/ooni/probe-engine/issues/112,bassosimone,probe-engine,effort/M|priority/high|technical task,OONI Measurements
+high,M,5,https://github.com/ooni/probe-engine/issues/110,bassosimone,probe-engine,bug|effort/M|priority/high,OONI Measurements
+high,XS,2,https://github.com/ooni/probe-engine/pull/117,bassosimone,probe-engine,chore|effort/XS|priority/high,OONI Measurements
+high,XS,2,https://github.com/ooni/probe-engine/issues/116,bassosimone,probe-engine,chore|effort/XS|priority/high,OONI Measurements
+high,S,3,https://github.com/ooni/probe-engine/issues/111,bassosimone,probe-engine,bug|effort/S|priority/high,OONI Measurements
+high,S,3,https://github.com/ooni/spec/issues/163,bassosimone,spec,bug|effort/S|priority/high,OONI Measurements
+high,M,5,https://github.com/ooni/netx/issues/126,bassosimone,netx,bug|effort/M|priority/high,OONI Measurements
+medium,M,5,https://github.com/ooni/probe-engine/issues/93,bassosimone,probe-engine,effort/M|enhancement|priority/medium,OONI Measurements
+high,M,5,https://github.com/ooni/probe-cli/issues/77,bassosimone,probe-cli,effort/M|priority/high,OONI Apps
+high,M,5,https://github.com/ooni/probe-cli/issues/41,bassosimone,probe-cli,effort/M|enhancement|priority/high,OONI Apps
+high,XS,2,https://github.com/ooni/probe-desktop/issues/60,sarathms,probe-desktop,effort/XS|enhancement|priority/high,OONI Apps
+high,M,5,https://github.com/ooni/probe-cli/issues/37,hellais,probe-cli,effort/M|enhancement|priority/high,OONI Apps
+high,M,5,https://github.com/ooni/probe/issues/804,hellais,probe,effort/M|enhancement|priority/high|ux,OONI Apps
+high,S,3,https://github.com/ooni/probe-desktop/issues/31,hellais,probe-desktop,Platform: MacOS|effort/S|hacktoberfest|priority/high,OONI Apps
+high,S,3,https://github.com/ooni/explorer/issues/350,sarathms,explorer,bug|effort/S|priority/high,OONI Apps
+high,M,5,https://github.com/ooni/ooni.org/pull/298,sarathms,ooni.org,effort/M|priority/high,OONI Apps
+high,M,5,https://github.com/ooni/ooni.org/pull/301,sarathms,ooni.org,effort/M|priority/high,OONI Apps
+high,M,5,https://github.com/ooni/ooni.org/issues/193,hellais|agrabeli,ooni.org,effort/M|priority/high,OONI Apps
+high,S,3,https://github.com/ooni/explorer/issues/339,agrabeli,explorer,effort/S|enhancement|priority/high|ux,OONI Apps
+high,M,5,https://github.com/ooni/ooni.org/issues/308,hellais,ooni.org,effort/M|priority/high,OONI Apps
+medium,M,5,https://github.com/ooni/probe-desktop/issues/46,sarathms,probe-desktop,effort/M|priority/medium|ux,OONI Apps
+medium,S,3,https://github.com/ooni/probe-desktop/issues/65,sarathms,probe-desktop,bug|effort/S|priority/medium|ux,OONI Apps
+medium,M,5,https://github.com/ooni/probe-desktop/issues/48,sarathms,probe-desktop,bug|effort/M|priority/medium,OONI Apps
+medium,M,5,https://github.com/ooni/probe-desktop/issues/63,sarathms,probe-desktop,bug|effort/M|priority/medium|ux,OONI Apps
+medium,M,5,https://github.com/ooni/probe-desktop/issues/47,sarathms,probe-desktop,effort/M|priority/medium,OONI Apps
+low,XS,2,https://github.com/ooni/probe-desktop/issues/71,sarathms,probe-desktop,bug|effort/XS|priority/low|ux,OONI Apps
