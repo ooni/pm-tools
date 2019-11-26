@@ -1,5 +1,6 @@
 import os
 import yaml
+import argparse
 from github import Github
 
 g = Github(os.environ['GITHUB_TOKEN'])
@@ -26,7 +27,18 @@ def sync_labels(repo, base_labels):
         repo.create_label(name=label.name, color=label.color, description=label.description or '')
 
 def main():
+
+    parser = argparse.ArgumentParser(description="Cycle planner")
+    parser.add_argument("--repo", help="limit to a single repository")
+    args = parser.parse_args()
+
     base_labels = load_base_labels()
+    if args.repo:
+        print('Synching labels in ooni/{}'.format(args.repo))
+        repo = g.get_organization('ooni').get_repo(args.repo)
+        sync_labels(repo=repo, base_labels=base_labels)
+        return
+
     for repo in g.get_organization('ooni').get_repos():
         print('Synching labels in ooni/{}'.format(repo.name))
         sync_labels(repo=repo, base_labels=base_labels)
