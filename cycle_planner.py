@@ -4,59 +4,9 @@ import argparse
 import json
 from pprint import pprint
 from github import Github
+from constants import OONI_TEAMS_BY_NAME, EFFORT_MAP
 
 g = Github(os.environ["GITHUB_TOKEN"])
-
-teams = {
-    "OONI Backends": [
-        "api",
-        "orchestra",
-        "sysadmin",
-        "pipeline",
-        "backend-legacy",
-        "collector",
-    ],
-    "OONI Measurements": [
-        "probe-engine",
-        "jafar",
-        "netx",
-        "spec",
-        "EvilGenius",
-    ],
-    "OONI Apps": [
-        "probe-cli",
-        "design-system",
-        "probe-desktop",
-        "probe-ios",
-        "probe-android",
-        "probe-legacy",
-        "run",
-        "probe-react-native",
-        "explorer",
-        "probe",
-        "explorer-legacy",
-        "design.ooni.io",
-    ],
-    "OONI Research": [
-        "translations",
-        "datk",
-        "slides",
-        "notebooks",
-        "license",
-        "code-style",
-        "labs",
-        "ooni.io",
-        "gatherings",
-    ]
-}
-
-effort_map = {
-        "XS": 2,
-        "S": 5,
-        "M": 8,
-        "L": 13,
-        "XL": 21,
-}
 
 total_effort = 0
 efforts_by_person = {}
@@ -93,7 +43,7 @@ def get_effort(issue):
         raise DuplicateLabel("Effort", issue.title, issue.html_url)
 
     effort = effort_list[0].name.upper().split("/")[1]
-    effort_num = effort_map[effort]
+    effort_num = EFFORT_MAP[effort]
     return effort, effort_num
 
 def get_priority(issue):
@@ -119,7 +69,7 @@ def get_assignees(issue):
 
 
 def cycle_backlog_issues():
-    for team_name, repos in teams.items():
+    for team_name, repos in OONI_TEAMS_BY_NAME.items():
         project = None
         for p in g.get_organization("ooni").get_projects():
             if p.name == team_name:

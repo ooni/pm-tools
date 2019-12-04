@@ -1,52 +1,10 @@
 import os
 from github import Github
+from constants import OONI_TEAMS_BY_NAME
 
 g = Github(os.environ['GITHUB_TOKEN'])
 
-teams = {
-    'OONI Backends': [
-        'api',
-        'orchestra',
-        'sysadmin',
-        'pipeline',
-        'backend-legacy',
-        'collector',
-    ],
-    'OONI Measurements': [
-        'probe-engine',
-        'jafar',
-        'netx',
-        'spec',
-        'EvilGenius',
-    ],
-    'OONI Apps': [
-        'probe-cli',
-        'design-system',
-        'probe-desktop',
-        'probe-ios',
-        'probe-android',
-        'probe-legacy',
-        'run',
-        'probe-react-native',
-        'explorer',
-        'probe',
-        'explorer-legacy',
-        'design.ooni.io',
-    ],
-    'OONI Research': [
-        'translations',
-        'datk',
-        'slides',
-        'notebooks',
-        'license',
-        'code-style',
-        'labs',
-        'ooni.io',
-        'gatherings',
-    ]
-}
-
-for team_name, repos in teams.items():
+for team_name, repos in OONI_TEAMS_BY_NAME.items():
     project = None
     for p in g.get_organization('ooni').get_projects():
         if p.name == team_name:
