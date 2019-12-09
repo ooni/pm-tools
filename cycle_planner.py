@@ -68,7 +68,7 @@ def get_assignees(issue):
     return assignees
 
 
-def cycle_backlog_issues():
+def issues_in_column(column_name):
     for team_name, repos in OONI_TEAMS_BY_NAME.items():
         project = None
         for p in g.get_organization("ooni").get_projects():
@@ -77,7 +77,7 @@ def cycle_backlog_issues():
 
         column = None
         for c in project.get_columns():
-            if c.name == "Cycle Backlog":
+            if c.name.lower() == column_name.lower():
                 column = c
                 break
 
@@ -85,9 +85,9 @@ def cycle_backlog_issues():
             issue = card.get_content()
             yield project, issue
 
-def get_cycle_backlog():
-    cycle_backlog = []
-    for project, issue in cycle_backlog_issues():
+def get_issues_in_column(column_name):
+    column = []
+    for project, issue in issues_in_column(column_name):
         if issue is None:
             continue
 
@@ -110,37 +110,41 @@ def get_cycle_backlog():
         except MissingAssignee as err:
             err.print_error()
 
-        cycle_backlog.append({
+        column.append({
             "assignees": "|".join(assignee_list),
             "repository": issue.repository.name,
             "labels": "|".join(all_labels),
             "priority": priority,
             "effort": effort,
             "effort_points": effort_num,
+            "issue_title": issue.title,
             "issue_url": issue.html_url,
             "project": project.name,
+            "column": column_name.lower()
         })
-    return cycle_backlog
+    return column
 
-def write_to_csv(dst_file):
-    print("Fetching cycle backlog")
-    cycle_backlog = get_cycle_backlog()
+def write_to_csv(dst_file, column_name):
+    print("Fetching {}".format(column_name))
+    column = get_issues_in_column(column_name)
 
     print("Writing to {}".format(dst_file))
-    with open(dst_file, 'w') as out_file:
+    with open(dst_file, 'a') as out_file:
         field_names = [
             "priority",
             "effort",
             "effort_points",
+            "issue_title",
             "issue_url",
             "assignees",
             "repository",
             "labels",
+            "column",
             "project"
         ]
         writer = csv.DictWriter(out_file, fieldnames=field_names)
         writer.writeheader()
-        for row in cycle_backlog:
+        for row in column:
             writer.writerow(row)
 
 def print_summary(src_file):
@@ -150,7 +154,10 @@ def print_summary(src_file):
     with open(src_file) as in_file:
         reader = csv.DictReader(in_file)
         for row in reader:
-            effort_num = int(row["effort_points"])
+            try:
+                effort_num = int(row["effort_points"])
+            except:
+                effort_num = 0
             for assignee in row["assignees"].split("|"):
                 efforts_by_person[assignee] = efforts_by_person.get(assignee, 0)
                 efforts_by_person[assignee] += int(effort_num)
@@ -163,9 +170,10 @@ def print_summary(src_file):
 def main():
     parser = argparse.ArgumentParser(description="Cycle planner")
     parser.add_argument("--output", help="Where to write the csv file to", required=True)
+    parser.add_argument("--column", help="Which column to retrieve", default="Cycle Backlog")
     args = parser.parse_args()
 
-    write_to_csv(args.output)
+    write_to_csv(args.output, args.column)
     print_summary(args.output)
 
 if __name__ == "__main__":
